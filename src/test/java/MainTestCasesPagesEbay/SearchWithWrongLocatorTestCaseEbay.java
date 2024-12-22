@@ -4,8 +4,8 @@ import MainPageTestCaseEbay.MainPageTestCaseEbay;
 import SubPagesTestCasesEbay.HomePageTestCaseEbay;
 import SubPagesTestCasesEbay.ProductPageTestCaseEbay;
 import SubPagesTestCasesEbay.ResultSearchPageTestCaseEbay;
-import SupportiveTestCasesEbay.ExcelFileHandlerTestCaseEbay;
-import SupportiveTestCasesEbay.ScreenShotsCaptureTestCaseEbay;
+import Utils.ExcelFileHandlerUtilsTestCaseEbay;
+import Utils.ScreenShotsCaptureUtilsTestCaseEbay;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,7 +19,7 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
         String excelFilePath = "src/test/resources/testcasesdata/TestCasesData.xlsx";
         String sheetName = "TestCasesData";
         // Initialize ExcelUtils
-        ExcelFileHandlerTestCaseEbay excel = new ExcelFileHandlerTestCaseEbay(excelFilePath, sheetName);
+        ExcelFileHandlerUtilsTestCaseEbay excel = new ExcelFileHandlerUtilsTestCaseEbay(excelFilePath, sheetName);
 
         // Read data
         String Brand = excel.getCellData(1, 1); // Row 1, Column 0
@@ -33,17 +33,17 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
         setReportName("Wrong Locator Scenario- Test Case 4");
         startTest("Wrong Locator Scenario- Test Case 4");
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Samsung Selected", excelFilePath);
+        excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
         // Close workbook
         excel.closeWorkbook();
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
-        String screenshotPath1 = ScreenShotsCaptureTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
+        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
         // Step 2: Select the first product
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
-        String screenshotPath2 = ScreenShotsCaptureTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
+        String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
         System.out.println(screenshotPath2);
         test.pass("System Successfully searched the item and select  the first result").addScreenCaptureFromPath(screenshotPath2);
 
@@ -55,7 +55,7 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
             test.pass("Element found and clicked successfully (unexpected).");
         } catch (Exception e) {
             // Capture screenshot on failure
-            String screenshotPath3 = ScreenShotsCaptureTestCaseEbay.takeScreenshot(driver, "wrong_locator_failure");
+            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "wrong_locator_failure");
 
             // Log the error and attach the screenshot to the Extent Report
             test.fail("Test failed due to incorrect locator.").addScreenCaptureFromPath(screenshotPath3).fail(e.getMessage());

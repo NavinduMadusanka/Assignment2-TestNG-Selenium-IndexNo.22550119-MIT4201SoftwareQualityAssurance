@@ -1,6 +1,6 @@
 package MainPageTestCaseEbay;
 
-import SupportiveTestCasesEbay.ScreenShotsCaptureTestCaseEbay;
+import Utils.ScreenShotsCaptureUtilsTestCaseEbay;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -63,7 +63,7 @@ public class MainPageTestCaseEbay {
     @AfterMethod
     public void captureScreenshotOnFailure(ITestResult result) {
         if (ITestResult.FAILURE == result.getStatus()) {
-            ScreenShotsCaptureTestCaseEbay.takeScreenshot(driver, result.getName());
+            ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, result.getName());
         }
     }
 

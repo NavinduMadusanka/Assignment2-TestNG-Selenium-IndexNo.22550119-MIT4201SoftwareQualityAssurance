@@ -1,4 +1,4 @@
-package SupportiveTestCasesEbay;
+package Utils;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ScreenShotsCaptureTestCaseEbay {
+public class ScreenShotsCaptureUtilsTestCaseEbay {
 
     // Method to capture a screenshot
     public static String takeScreenshot(WebDriver driver, String screenshotName) {

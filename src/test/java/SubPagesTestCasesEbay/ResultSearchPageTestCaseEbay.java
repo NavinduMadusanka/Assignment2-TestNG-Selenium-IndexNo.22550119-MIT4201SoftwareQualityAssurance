@@ -9,10 +9,10 @@ public class ResultSearchPageTestCaseEbay {
     WebDriver driver;
 
     // Locator for the first product in the search results
-    @FindBy(xpath = "//*[@id=\"item3b5e5fb14b\"]/div/div[2]/a/div/span")
+    @FindBy(xpath = "//*[@id='item3bab38a4c3']/div/div[2]/a/div/span")
     WebElement firstProduct;
 
-    @FindBy(xpath = "//*[@id=\"item3b5e5fb14b\"]/div/div[2]/div[5]/div[1]/div[1]/span")
+    @FindBy(xpath = "//*[@id='item3bab38a4c3']/div/div[2]/div[5]/div[1]/div[1]/span")
     WebElement itemPrice;
 
     // Constructor to initialize elements

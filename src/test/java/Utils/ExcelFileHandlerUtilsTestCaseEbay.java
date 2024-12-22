@@ -1,4 +1,4 @@
-package SupportiveTestCasesEbay;
+package Utils;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -6,13 +6,13 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class ExcelFileHandlerTestCaseEbay {
+public class ExcelFileHandlerUtilsTestCaseEbay {
 
     private Workbook workbook;
     private Sheet sheet;
 
     // Constructor to load the Excel file and sheet
-    public ExcelFileHandlerTestCaseEbay(String filePath, String sheetName) {
+    public ExcelFileHandlerUtilsTestCaseEbay(String filePath, String sheetName) {
         try (FileInputStream fis = new FileInputStream(filePath)) {
             workbook = new XSSFWorkbook(fis); // For .xlsx files
             sheet = workbook.getSheet(sheetName);

@@ -35,8 +35,8 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Add To Watch list Scenario - Test Case 2");
-        startTest("Add To Watch list Scenario - Test Case 2");
+        setReportName("Add To Watch List Scenario - Test Case 2");
+        startTest("Add To Watch List Scenario - Test Case 2");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);

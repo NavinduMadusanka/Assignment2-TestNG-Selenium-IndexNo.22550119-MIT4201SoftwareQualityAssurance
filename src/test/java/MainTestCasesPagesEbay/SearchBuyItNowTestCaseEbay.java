@@ -34,8 +34,8 @@ public class SearchBuyItNowTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Buy It Now Scenario- Test Case 3");
-        startTest("Buy It Now Scenario- Test Case 3");
+        setReportName("Buy It Now Scenario - Test Case 3");
+        startTest("Buy It Now Scenario - Test Case 3");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
@@ -44,16 +44,16 @@ public class SearchBuyItNowTestCaseEbay extends MainPageTestCaseEbay {
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
         String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
-        test.pass("System Successfully searched the item and select  the first result").addScreenCaptureFromPath(screenshotPath2);
+        test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
         // Step 3: Proceed to Buy It Now
         productPage.buyItNow();
-        test = extent.createTest("Successfully click on Buy It Now", "System Successfully  click on Buy It Now");
+        test = extent.createTest("Successfully click on Buy It Now", "System Successfully click on Buy It Now");
         String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "BuyItNow");
-        test.pass("System Successfully  click on Buy It Now").addScreenCaptureFromPath(screenshotPath3);
+        test.pass("System Successfully click on Buy It Now").addScreenCaptureFromPath(screenshotPath3);
 
         // Close workbook
         excel.closeWorkbook();

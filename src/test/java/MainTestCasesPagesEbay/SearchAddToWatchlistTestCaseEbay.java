@@ -35,8 +35,8 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Add To Watch list Scenario- Test Case 2");
-        startTest("Add To Watch list Scenario- Test Case 2");
+        setReportName("Add To Watch list Scenario - Test Case 2");
+        startTest("Add To Watch list Scenario - Test Case 2");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
@@ -45,16 +45,16 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
         String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
-        test.pass("System Successfully searched the item and select  the first result").addScreenCaptureFromPath(screenshotPath2);
+        test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
         // Step 3: Proceed to addToWatchList
         productPage.addToWatchList();
-        test = extent.createTest("Successful Add to watch list", "System Successfully  Add the item to watch list");
+        test = extent.createTest("Successful Add to watch list", "System Successfully Add the item to watch list");
         String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "AddToWatchList");
-        test.pass("System Successfully  Add the item to watch list").addScreenCaptureFromPath(screenshotPath3);
+        test.pass("System Successfully Add the item to watch list").addScreenCaptureFromPath(screenshotPath3);
 
         // Close workbook
         excel.closeWorkbook();

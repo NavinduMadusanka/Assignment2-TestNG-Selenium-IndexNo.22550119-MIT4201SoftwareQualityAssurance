@@ -13,9 +13,7 @@ import org.testng.annotations.Test;
 public class SearchAddToCartTestCaseEbay extends MainPageTestCaseEbay {
 
     @BeforeTest
-    public void setup() {
-        setUpBrowser();
-    }
+    public void setup() { setUpBrowser(); }
 
     @Test
     public void searchAndBuySamsungPhone() {
@@ -36,8 +34,8 @@ public class SearchAddToCartTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Add To Cart Scenario- Test Case 1");
-        startTest("Add To Cart Scenario- Test Case 1");
+        setReportName("Add To Cart Scenario - Test Case 1");
+        startTest("Add To Cart Scenario - Test Case 1");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
@@ -60,15 +58,15 @@ public class SearchAddToCartTestCaseEbay extends MainPageTestCaseEbay {
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
         String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
-        test.pass("System Successfully searched the item and select  the first result").addScreenCaptureFromPath(screenshotPath2);
+        test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
         // Step 3: Proceed to add To Cart
-        test = extent.createTest("Successfully Add to Cart", "System Successfully  Add the item to Cart");
+        test = extent.createTest("Successfully Add to Cart", "System Successfully Add the item to Cart");
         String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "AddToCart");
-        test.pass("System Successfully  Add the item to Cart").addScreenCaptureFromPath(screenshotPath3);
+        test.pass("System Successfully Add the item to Cart").addScreenCaptureFromPath(screenshotPath3);
 
         // Close workbook
         excel.closeWorkbook();

@@ -30,8 +30,8 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(Brand);
-        setReportName("Wrong Locator Scenario- Test Case 4");
-        startTest("Wrong Locator Scenario- Test Case 4");
+        setReportName("Wrong Locator Scenario - Test Case 4");
+        startTest("Wrong Locator Scenario - Test Case 4");
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
@@ -40,12 +40,13 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
+
         // Step 2: Select the first product
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
         String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
         System.out.println(screenshotPath2);
-        test.pass("System Successfully searched the item and select  the first result").addScreenCaptureFromPath(screenshotPath2);
+        test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         try {
             // Intentionally use a wrong locator

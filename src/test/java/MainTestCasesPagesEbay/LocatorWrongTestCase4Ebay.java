@@ -15,7 +15,8 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
     public void setup() { setUpBrowser(); }
 
     @Test
-    public void searchAndBuySamsungPhone() {
+    public void SearchAndBuyInfinixPhone() {
+
         String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
         String sheetName = "TestCasesDataEbay";
         // Initialize ExcelUtils

@@ -16,7 +16,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
     public void setup() { setUpBrowser(); }
 
     @Test
-    public void searchAndBuySamsungPhone() {
+    public void SearchAndBuyInfinixPhone() {
 
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);

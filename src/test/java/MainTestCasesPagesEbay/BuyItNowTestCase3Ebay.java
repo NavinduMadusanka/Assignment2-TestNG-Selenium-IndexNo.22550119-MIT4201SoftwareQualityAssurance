@@ -17,7 +17,8 @@ public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
     }
 
     @Test
-    public void searchAndBuySamsungPhone() {
+    public void SearchAndBuyInfinixPhone() {
+
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);

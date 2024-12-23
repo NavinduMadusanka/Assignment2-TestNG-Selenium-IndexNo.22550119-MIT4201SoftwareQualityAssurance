@@ -17,7 +17,7 @@ public class AddToWatchListTestCase2Ebay extends MainPageTestCaseEbay {
     }
 
     @Test
-    public void searchAndBuySamsungPhone() {
+    public void SearchAndBuyInfinixPhone() {
 
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);

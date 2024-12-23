@@ -16,8 +16,8 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
 
     @Test
     public void searchAndBuySamsungPhone() {
-        String excelFilePath = "src/test/resources/testcasesdata/TestCasesData.xlsx";
-        String sheetName = "TestCasesData";
+        String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
+        String sheetName = "TestCasesDataEbay";
         // Initialize ExcelUtils
         ExcelFileHandlerUtilsTestCaseEbay excel = new ExcelFileHandlerUtilsTestCaseEbay(excelFilePath, sheetName);
 
@@ -33,7 +33,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         setReportName("Locator Wrong Test Case 4 Ebay");
         startTest("Locator Wrong Test Case 4 Ebay");
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
+        excel.setCellData(1, 2, "Infinix is the good phone", excelFilePath);
 
         // Close workbook
         excel.closeWorkbook();

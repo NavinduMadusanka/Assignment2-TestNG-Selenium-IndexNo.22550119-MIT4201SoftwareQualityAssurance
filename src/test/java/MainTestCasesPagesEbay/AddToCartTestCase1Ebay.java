@@ -23,8 +23,8 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);
 
         // Initialize Excel Information
-        String excelFilePath = "src/test/resources/testcasesdata/TestCasesData.xlsx";
-        String sheetName = "TestCasesData";
+        String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
+        String sheetName = "TestCasesDataEbay";
 
         // Initialize ExcelUtils
         ExcelFileHandlerUtilsTestCaseEbay excel = new ExcelFileHandlerUtilsTestCaseEbay(excelFilePath, sheetName);
@@ -61,7 +61,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
+        excel.setCellData(1, 2, "Infinix is the good phone", excelFilePath);
 
         // Step 3: Proceed to add To Cart
         test = extent.createTest("Successfully Add to Cart", "System Successfully Add the item to Cart");

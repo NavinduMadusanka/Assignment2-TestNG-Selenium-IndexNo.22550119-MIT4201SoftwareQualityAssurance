@@ -38,13 +38,13 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         // Close workbook
         excel.closeWorkbook();
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
-        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
+        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Successful Search Test Case 4 Ebay");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
 
         // Step 2: Select the first product
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
-        String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
+        String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "First Result Taken Test Case 4 Ebay");
         System.out.println(screenshotPath2);
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
@@ -56,7 +56,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
             test.pass("Element found and clicked successfully (unexpected).");
         } catch (Exception e) {
             // Capture screenshot on failure
-            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "wrong_locator_failure");
+            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Locator Wrong Failure Test Case 4 Ebay");
 
             // Log the error and attach the screenshot to the Extent Report
             test.fail("Test failed due to incorrect locator.").addScreenCaptureFromPath(screenshotPath3).fail(e.getMessage());

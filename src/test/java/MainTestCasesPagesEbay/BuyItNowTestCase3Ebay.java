@@ -37,13 +37,13 @@ public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
         setReportName("Buy It Now Test Case 3 Ebay");
         startTest("Buy It Now Test Case 3 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
-        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
+        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Successful Search Test Case 3 Ebay");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
 
         // Step 2: Select the first product
         searchResultsPage.selectFirstProduct();
         test = extent.createTest("First Item Selected", "System Successfully searched the item and get the select the first result");
-        String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "FirstResultTaken");
+        String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "First Result Taken Test Case 3 Ebay");
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
@@ -52,7 +52,7 @@ public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
         // Step 3: Proceed to Buy It Now
         productPage.buyItNow();
         test = extent.createTest("Successfully click on Buy It Now", "System Successfully click on Buy It Now");
-        String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "BuyItNow");
+        String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Buy It Now Test Case 3 Ebay");
         test.pass("System Successfully click on Buy It Now").addScreenCaptureFromPath(screenshotPath3);
 
         // Close workbook

@@ -18,7 +18,7 @@ public class ProductPageTestCaseEbay {
     @FindBy(id = "binBtn_btn_1") // Proceed to Buy It Now
     WebElement buyItNow;
 
-    @FindBy(id = "wrong element") // Proceed to Buy It Now
+    @FindBy(id = "wrong element") // Proceed to Locator Wrong
     WebElement wrongElement;
 
     // Constructor to initialize elements

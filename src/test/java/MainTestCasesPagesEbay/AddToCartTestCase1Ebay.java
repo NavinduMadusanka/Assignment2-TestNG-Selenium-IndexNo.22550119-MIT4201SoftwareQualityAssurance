@@ -37,7 +37,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         setReportName("Add To Cart Test Case 1 Ebay");
         startTest("Add To Cart Test Case 1 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
-        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
+        String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Successful Search Test Case Ebay 1");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
 
         // Step 2: Select the first product

@@ -35,8 +35,8 @@ public class CheckStatusTestCase5Ebay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Infinix phone
         homePage.searchFor(mobileBrand);
-        setReportName("Check Condition Test Case 5 Ebay");
-        startTest("Check Condition Test Case 5 Ebay");
+        setReportName("Check Status Test Case 5 Ebay");
+        startTest("Check Status Test Case 5 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Successful Search Test Case 5 Ebay");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);

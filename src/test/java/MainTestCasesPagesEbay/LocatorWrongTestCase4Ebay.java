@@ -34,7 +34,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         setReportName("Locator Wrong Test Case 4 Ebay");
         startTest("Locator Wrong Test Case 4 Ebay");
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Infinix is the good phone", excelFilePath);
+        excel.setCellData(1, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
 
         // Close workbook
         excel.closeWorkbook();

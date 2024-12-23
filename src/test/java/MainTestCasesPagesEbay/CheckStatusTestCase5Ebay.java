@@ -1,7 +1,7 @@
 package MainTestCasesPagesEbay;
 
 import MainPageTestCaseEbay.MainPageTestCaseEbay;
-import SubPagesTestCasesEbay.CheckProductPageConditionsTestCaseEbay;
+import SubPagesTestCasesEbay.CheckStatusTestCaseEbay;
 import SubPagesTestCasesEbay.HomePageTestCaseEbay;
 import SubPagesTestCasesEbay.ProductPageTestCaseEbay;
 import SubPagesTestCasesEbay.ResultSearchPageTestCaseEbay;
@@ -10,12 +10,10 @@ import Utils.ScreenShotsCaptureUtilsTestCaseEbay;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class CheckProductConditionsTestCase5Ebay extends MainPageTestCaseEbay {
+public class CheckStatusTestCase5Ebay extends MainPageTestCaseEbay {
 
     @BeforeTest
-    public void setup() {
-        setUpBrowser();
-    }
+    public void setup() { setUpBrowser(); }
 
     @Test
     public void SearchAndBuyInfinixPhone() {
@@ -23,7 +21,7 @@ public class CheckProductConditionsTestCase5Ebay extends MainPageTestCaseEbay {
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);
-        CheckProductPageConditionsTestCaseEbay checkConditionsPage = new CheckProductPageConditionsTestCaseEbay(driver);
+        CheckStatusTestCaseEbay checkConditionsPage = new CheckStatusTestCaseEbay(driver);
 
         // Initialize Excel Information
         String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
@@ -37,8 +35,8 @@ public class CheckProductConditionsTestCase5Ebay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Infinix phone
         homePage.searchFor(mobileBrand);
-        setReportName("Check Product Conditions Test Case 5 Ebay");
-        startTest("Check Product Conditions Test Case 5 Ebay");
+        setReportName("Check Condition Test Case 5 Ebay");
+        startTest("Check Condition Test Case 5 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Successful Search Test Case 5 Ebay");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
@@ -48,20 +46,20 @@ public class CheckProductConditionsTestCase5Ebay extends MainPageTestCaseEbay {
         String screenshotPath2 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "First Result Taken Test Case 5 Ebay");
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
-        // Step 4: Check product conditions on the product page
-        boolean conditionsMet = checkConditionsPage.checkProductConditions();
+        // Step 2: Check product conditions on the product page
+        boolean conditionsMet = checkConditionsPage.checkProductStatus();
         if (conditionsMet) {
-            test = extent.createTest("Product Conditions Verified", "All product conditions are met.");
-            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Conditions Verified Test Case 5 Ebay");
-            test.pass("All product conditions are met").addScreenCaptureFromPath(screenshotPath3);
+            test = extent.createTest("Product Status Verified", "Product Status is met.");
+            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Status Verified Test Case 5 Ebay");
+            test.pass("Product Status is met").addScreenCaptureFromPath(screenshotPath3);
         } else {
-            test = extent.createTest("Product Conditions Verification Failed", "Not all product conditions are met.");
-            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Conditions Not Met Test Case 5 Ebay");
-            test.fail("Not all product conditions are met").addScreenCaptureFromPath(screenshotPath3);
+            test = extent.createTest("Product Status Verification Failed", "Product Status is not met.");
+            String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Status Not Met Test Case 5 Ebay");
+            test.fail("Product Status is not met").addScreenCaptureFromPath(screenshotPath3);
         }
 
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Infinix is a good phone", excelFilePath);
+        excel.setCellData(1, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
 
         // Close workbook
         excel.closeWorkbook();

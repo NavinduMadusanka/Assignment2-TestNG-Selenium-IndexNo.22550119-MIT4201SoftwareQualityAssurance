@@ -61,7 +61,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Infinix is the good phone", excelFilePath);
+        excel.setCellData(1, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
 
         // Step 3: Proceed to add To Cart
         test = extent.createTest("Successfully Add to Cart", "System Successfully Add the item to Cart");

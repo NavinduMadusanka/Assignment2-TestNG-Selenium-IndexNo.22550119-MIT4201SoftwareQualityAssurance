@@ -29,7 +29,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);
 
-        // Step 1: Search for Samsung phone
+        // Step 1: Search for Infinix phone
         homePage.searchFor(Brand);
         setReportName("Locator Wrong Test Case 4 Ebay");
         startTest("Locator Wrong Test Case 4 Ebay");

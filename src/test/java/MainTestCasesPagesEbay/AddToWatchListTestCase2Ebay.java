@@ -33,7 +33,7 @@ public class AddToWatchListTestCase2Ebay extends MainPageTestCaseEbay {
         // Read data
         String mobileBrand = excel.getCellData(1, 1); // Row 1, Column 1
 
-        // Step 1: Search for Samsung phone
+        // Step 1: Search for Infinix phone
         homePage.searchFor(mobileBrand);
         setReportName("Add To Watch List Test Case 2 Ebay");
         startTest("Add To Watch List Test Case 2 Ebay");

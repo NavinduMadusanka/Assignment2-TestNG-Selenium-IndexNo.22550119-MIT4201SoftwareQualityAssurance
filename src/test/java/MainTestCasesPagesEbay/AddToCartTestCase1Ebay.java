@@ -32,7 +32,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         // Read data
         String mobileBrand = excel.getCellData(1, 1); // Row 1, Column 1
 
-        // Step 1: Search for Samsung phone
+        // Step 1: Search for Infinix phone
         homePage.searchFor(mobileBrand);
         setReportName("Add To Cart Test Case 1 Ebay");
         startTest("Add To Cart Test Case 1 Ebay");

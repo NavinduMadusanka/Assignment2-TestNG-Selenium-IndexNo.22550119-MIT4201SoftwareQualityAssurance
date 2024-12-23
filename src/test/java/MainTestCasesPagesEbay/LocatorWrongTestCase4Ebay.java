@@ -9,7 +9,7 @@ import Utils.ScreenShotsCaptureUtilsTestCaseEbay;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
+public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
 
     @BeforeTest
     public void setup() { setUpBrowser(); }
@@ -30,8 +30,8 @@ public class SearchWithWrongLocatorTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(Brand);
-        setReportName("Wrong Locator Scenario - Test Case 4");
-        startTest("Wrong Locator Scenario - Test Case 4");
+        setReportName("Locator Wrong Test Case 4 Ebay");
+        startTest("Locator Wrong Test Case 4 Ebay");
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 

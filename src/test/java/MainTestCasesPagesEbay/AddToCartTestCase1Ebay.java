@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SearchAddToCartTestCaseEbay extends MainPageTestCaseEbay {
+public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
 
     @BeforeTest
     public void setup() { setUpBrowser(); }
@@ -34,8 +34,8 @@ public class SearchAddToCartTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Add To Cart Scenario - Test Case 1");
-        startTest("Add To Cart Scenario - Test Case 1");
+        setReportName("Add To Cart Test Case 1 Ebay");
+        startTest("Add To Cart Test Case 1 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);

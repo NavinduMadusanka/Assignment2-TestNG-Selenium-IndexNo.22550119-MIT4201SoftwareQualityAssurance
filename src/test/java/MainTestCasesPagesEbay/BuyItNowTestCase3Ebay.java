@@ -1,15 +1,15 @@
 package MainTestCasesPagesEbay;
 
 import MainPageTestCaseEbay.MainPageTestCaseEbay;
-import SubPagesTestCasesEbay.HomePageTestCaseEbay;
-import SubPagesTestCasesEbay.ProductPageTestCaseEbay;
-import SubPagesTestCasesEbay.ResultSearchPageTestCaseEbay;
 import Utils.ExcelFileHandlerUtilsTestCaseEbay;
 import Utils.ScreenShotsCaptureUtilsTestCaseEbay;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import SubPagesTestCasesEbay.HomePageTestCaseEbay;
+import SubPagesTestCasesEbay.ResultSearchPageTestCaseEbay;
+import SubPagesTestCasesEbay.ProductPageTestCaseEbay;
 
-public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
+public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
 
     @BeforeTest
     public void setup() {
@@ -18,7 +18,6 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
 
     @Test
     public void searchAndBuySamsungPhone() {
-
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);
@@ -35,8 +34,8 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
 
         // Step 1: Search for Samsung phone
         homePage.searchFor(mobileBrand);
-        setReportName("Add To Watch List Scenario - Test Case 2");
-        startTest("Add To Watch List Scenario - Test Case 2");
+        setReportName("Buy It Now Test Case 3 Ebay");
+        startTest("Buy It Now Test Case 3 Ebay");
         test = extent.createTest("Successful Searched", "System Successfully searched the item and get the result");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "SuccessfulSearch");
         test.pass("System Successfully searched the item and get the result").addScreenCaptureFromPath(screenshotPath1);
@@ -50,11 +49,11 @@ public class SearchAddToWatchlistTestCaseEbay extends MainPageTestCaseEbay {
         // Write data back to the Excel file
         excel.setCellData(1, 2, "Samsung is the good phone", excelFilePath);
 
-        // Step 3: Proceed to addToWatchList
-        productPage.addToWatchList();
-        test = extent.createTest("Successful Add to watch list", "System Successfully Add the item to watch list");
-        String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "AddToWatchList");
-        test.pass("System Successfully Add the item to watch list").addScreenCaptureFromPath(screenshotPath3);
+        // Step 3: Proceed to Buy It Now
+        productPage.buyItNow();
+        test = extent.createTest("Successfully click on Buy It Now", "System Successfully click on Buy It Now");
+        String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "BuyItNow");
+        test.pass("System Successfully click on Buy It Now").addScreenCaptureFromPath(screenshotPath3);
 
         // Close workbook
         excel.closeWorkbook();

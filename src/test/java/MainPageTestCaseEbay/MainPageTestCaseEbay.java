@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MainPageTestCaseEbay {
+
     protected WebDriver driver;
     protected static ExtentReports extent;
     protected static ExtentTest test;

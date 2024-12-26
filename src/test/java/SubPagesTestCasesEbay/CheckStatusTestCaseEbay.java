@@ -19,7 +19,7 @@ public class CheckStatusTestCaseEbay {
 
     // Method to check product Status
     public boolean checkProductStatus() {
-        // Add logic to check other conditions if necessary
+        // Add logic to check other status if necessary
         return StatusElement.isDisplayed();
     }
 }

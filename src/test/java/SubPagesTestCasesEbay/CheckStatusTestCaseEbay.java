@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckStatusTestCaseEbay {
     WebDriver driver;
 
-    // Locator for the condition element
+    // Locator for the Product Status element
     @FindBy(xpath = "//*[@id='mainContent']/div/div[2]/div/div/div/a/span")
     WebElement StatusElement;
 
@@ -17,7 +17,7 @@ public class CheckStatusTestCaseEbay {
         PageFactory.initElements(driver, this);
     }
 
-    // Method to check product conditions
+    // Method to check product Status
     public boolean checkProductStatus() {
         // Add logic to check other conditions if necessary
         return StatusElement.isDisplayed();

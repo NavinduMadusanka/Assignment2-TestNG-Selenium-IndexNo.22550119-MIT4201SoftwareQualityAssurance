@@ -31,12 +31,12 @@ public class JobsPortalPageTestCaseEbay extends MainPageTestCaseEbay {
 
     // Method to searchFor
     public String careersOperations() {
-
         // Click On Deals
         deals.click();
         test = extent.createTest("Successful Navigate to Global Deals Page", "Successful Navigate to Global Deals Page");
         String screenshotPath1 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Deals Page Test Case 6 Ebay");
         test.pass("System Successfully Navigate to Global Deals Page").addScreenCaptureFromPath(screenshotPath1);
+
         // Scroll to the bottom of the page
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
@@ -66,18 +66,21 @@ public class JobsPortalPageTestCaseEbay extends MainPageTestCaseEbay {
             startSearchJob.sendKeys("IT & Technical Operations" + Keys.ENTER);
             test = extent.createTest("Successfully Navigate to IT & Technical Operations Jobs Page", "Successfully Navigate to IT & Technical Operations Jobs Page");
             String screenshotPath5 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "IT & Technical Operations Jobs Page Test Case 6 Ebay");
-            test.pass("System Successfully Navigate to Engineering Jobs Page").addScreenCaptureFromPath(screenshotPath5);
+            test.pass("System Successfully Navigate to IT & Technical Operations Jobs Page").addScreenCaptureFromPath(screenshotPath5);
+
+            // Wait for the page title to be updated
+            wait.until(ExpectedConditions.titleContains("Jobs in IT & Technical Operations"));
 
         } catch (Exception e) {
-
             System.out.println("Element not found within the specified time.");
             test = extent.createTest("Element not found within the specified time", "Element not found within the specified time");
-            String screenshotPath5 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Element Not Found Within The Specified Time Test Case 6 Ebay");
-            test.pass("Element not found within the specified time").addScreenCaptureFromPath(screenshotPath5);
+            String screenshotPath6 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Element Not Found Within The Specified Time Test Case 6 Ebay");
+            test.pass("Element not found within the specified time").addScreenCaptureFromPath(screenshotPath6);
         }
 
+        // Get the page title and print it for debugging
         String pageTitle = driver.getTitle();
-        System.out.println(pageTitle);
+        System.out.println("Actual Page Title: " + pageTitle);
         return pageTitle;
     }
 }

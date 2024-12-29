@@ -25,9 +25,12 @@ public class FindJobsInPortalTestCase6Ebay extends MainPageTestCaseEbay {
 
         // Read data
         String expectedTitle = excel.getCellData(1, 1); // Row 1, Column 1
+        System.out.println("Expected Page Title: " + expectedTitle); // Debug statement
 
         setReportName("Find Jobs In Portal Test Case 6 Ebay");
         startTest("Find Jobs In Portal Test Case 6 Ebay");
+
+        // Get the actual page title from the careers page operations
         String actualPageTitle = careersPage.careersOperations();
         test = extent.createTest("IT & Technical Operations Page Title Verification", "IT & Technical Operations Page Title Verification");
 

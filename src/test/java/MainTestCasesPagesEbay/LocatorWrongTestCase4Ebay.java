@@ -24,7 +24,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         ExcelFileHandlerUtilsTestCaseEbay excel = new ExcelFileHandlerUtilsTestCaseEbay(excelFilePath, sheetName);
 
         // Read data
-        String Brand = excel.getCellData(1, 1); // Row 1, Column 0
+        String Brand = excel.getCellData(0, 1); // Row 0, Column 1
 
         HomePageTestCaseEbay homePage = new HomePageTestCaseEbay(driver);
         ResultSearchPageTestCaseEbay searchResultsPage = new ResultSearchPageTestCaseEbay(driver);
@@ -35,7 +35,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
         setReportName("Locator Wrong Test Case 4 Ebay");
         startTest("Locator Wrong Test Case 4 Ebay");
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
+        excel.setCellData(0, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
 
         // Close workbook
         excel.closeWorkbook();

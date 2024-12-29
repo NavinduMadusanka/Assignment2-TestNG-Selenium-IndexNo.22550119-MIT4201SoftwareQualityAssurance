@@ -31,7 +31,7 @@ public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
         ExcelFileHandlerUtilsTestCaseEbay excel = new ExcelFileHandlerUtilsTestCaseEbay(excelFilePath, sheetName);
 
         // Read data
-        String mobileBrand = excel.getCellData(1, 1); // Row 1, Column 1
+        String mobileBrand = excel.getCellData(0, 1); // Row 0, Column 1
 
         // Step 1: Search for Infinix phone
         homePage.searchFor(mobileBrand);
@@ -48,7 +48,7 @@ public class BuyItNowTestCase3Ebay extends MainPageTestCaseEbay {
         test.pass("System Successfully searched the item and select the first result").addScreenCaptureFromPath(screenshotPath2);
 
         // Write data back to the Excel file
-        excel.setCellData(1, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
+        excel.setCellData(0, 2, "Infinix Hot 50 Factory Unlocked 256GB Internal Memory GSM Cell Phone GR", excelFilePath);
 
         // Step 3: Proceed to Buy It Now
         productPage.buyItNow();

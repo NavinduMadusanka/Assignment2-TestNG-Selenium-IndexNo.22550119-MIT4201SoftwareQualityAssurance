@@ -23,7 +23,7 @@ public class AddToCartTestCase1Ebay extends MainPageTestCaseEbay {
         ProductPageTestCaseEbay productPage = new ProductPageTestCaseEbay(driver);
 
         // Initialize Excel Information
-        String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
+        String excelFilePath = "src/test/resources/testcasesdataebay/TestCasesDataEbay.xlsx";
         String sheetName = "TestCasesDataEbay";
 
         // Initialize ExcelUtils

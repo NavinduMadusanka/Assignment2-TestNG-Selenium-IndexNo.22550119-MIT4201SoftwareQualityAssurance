@@ -17,7 +17,7 @@ public class LocatorWrongTestCase4Ebay extends MainPageTestCaseEbay {
     @Test
     public void SearchAndBuyInfinixPhone() {
 
-        String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
+        String excelFilePath = "src/test/resources/testcasesdataebay/TestCasesDataEbay.xlsx";
         String sheetName = "TestCasesDataEbay";
 
         // Initialize ExcelUtils

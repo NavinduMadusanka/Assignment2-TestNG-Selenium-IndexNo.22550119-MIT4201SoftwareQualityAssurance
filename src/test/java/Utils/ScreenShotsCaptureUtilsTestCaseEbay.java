@@ -15,7 +15,7 @@ public class ScreenShotsCaptureUtilsTestCaseEbay {
     public static String takeScreenshot(WebDriver driver, String screenshotName) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         //String filePath = "src/test/resources/screenshots/" + screenshotName + "_" + timestamp + ".png";
-        String filePath = "C:/Users/User/Desktop/Assignment2-TestNG-Selenium-IndexNo.22550119-MIT4201SoftwareQualityAssurance/src/test/resources/screenshots/" + screenshotName + "_" + timestamp + ".png";
+        String filePath = "C:/Users/User/Desktop/Assignment2-TestNG-Selenium-IndexNo.22550119-MIT4201SoftwareQualityAssurance/src/test/resources/screenshotsebay/" + screenshotName + "_" + timestamp + ".png";
         // Take the screenshot
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File destFile = new File(filePath);

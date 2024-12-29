@@ -24,7 +24,7 @@ public class CheckStatusTestCase5Ebay extends MainPageTestCaseEbay {
         CheckStatusTestCaseEbay checkConditionsPage = new CheckStatusTestCaseEbay(driver);
 
         // Initialize Excel Information
-        String excelFilePath = "src/test/resources/testcasesdata/TestCasesDataEbay.xlsx";
+        String excelFilePath = "src/test/resources/testcasesdataebay/TestCasesDataEbay.xlsx";
         String sheetName = "TestCasesDataEbay";
 
         // Initialize ExcelUtils

@@ -1,0 +1,10 @@
+<extent-config>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <theme>dark</theme>
+        <protocol>https</protocol>
+        <enableTimeline>true</enableTimeline>
+        <documentTitle>Automation Test Report</documentTitle>
+        <reportName>Test Execution Report</reportName>
+    </configuration>
+</extent-config>

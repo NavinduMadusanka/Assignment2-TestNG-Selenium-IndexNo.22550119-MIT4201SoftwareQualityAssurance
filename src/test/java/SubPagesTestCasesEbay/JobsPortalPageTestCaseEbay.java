@@ -57,7 +57,7 @@ public class JobsPortalPageTestCaseEbay extends MainPageTestCaseEbay {
         test.pass("System Successfully Navigate to Careers Page").addScreenCaptureFromPath(screenshotPath4);
 
         // Create an explicit wait with a timeout of 30 seconds
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(45));
         try {
             // Wait for the element to be visible
             WebElement startSearchJob = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("typehead")));

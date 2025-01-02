@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="false">
+    <test name="Test1">
+        <classes>
+            <class name="MainTestCasesPagesEbay.AddToCartTestCase1Ebay" />
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="MainTestCasesPagesEbay.AddToWatchListTestCase2Ebay" />
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="MainTestCasesPagesEbay.BuyItNowTestCase3Ebay" />
+        </classes>
+    </test>
+    <test name="Test4">
+        <classes>
+            <class name="MainTestCasesPagesEbay.LocatorWrongTestCase4Ebay" />
+        </classes>
+    </test>
+    <test name="Test5">
+        <classes>
+            <class name="MainTestCasesPagesEbay.CheckStatusTestCase5Ebay" />
+        </classes>
+    </test>
+    <test name="Test6">
+        <classes>
+            <class name="MainTestCasesPagesEbay.FindJobsInPortalTestCase6Ebay" />
+        </classes>
+    </test>
+</suite>

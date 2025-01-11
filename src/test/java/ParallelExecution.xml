@@ -31,4 +31,24 @@
             <class name="MainTestCasesPagesEbay.FindJobsInPortalTestCase6Ebay" />
         </classes>
     </test>
+    <test name="Test7">
+        <classes>
+            <class name="MainTestCasesPagesEbay.HeadlessTestCase7Ebay" />
+        </classes>
+    </test>
+    <test name="Test8">
+        <classes>
+            <class name="MainTestCasesPagesEbay.QuantityCheckHeadlessTestCase8Ebay" />
+        </classes>
+    </test>
+    <test name="Test9">
+        <classes>
+            <class name="MainTestCasesPagesEbay.ShippingHeadlessTestCase9Ebay" />
+        </classes>
+    </test>
+    <test name="Test9">
+        <classes>
+            <class name="MainTestCasesPagesEbay.ReturnsConditionsHeadlessTestCase10Ebay" />
+        </classes>
+    </test>
 </suite>

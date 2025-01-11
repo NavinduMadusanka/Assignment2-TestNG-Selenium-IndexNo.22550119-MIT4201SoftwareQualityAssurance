@@ -20,6 +20,10 @@
         <SuiteXmlFiles>LocatorWrongTestCase4Ebay.xml</SuiteXmlFiles>
         <SuiteXmlFiles>CheckStatusTestCase5Ebay.xml</SuiteXmlFiles>
         <SuiteXmlFiles>FindJobsInPortalTestCase6Ebay.xml</SuiteXmlFiles>
+        <SuiteXmlFiles>HeadlessTestCase7Ebay.xml</SuiteXmlFiles>
+        <SuiteXmlFiles>QuantityCheckHeadlessTestCase8Ebay.xml</SuiteXmlFiles>
+        <SuiteXmlFiles>ShippingHeadlessTestCase9Ebay.xml</SuiteXmlFiles>
+        <SuiteXmlFiles>ReturnsConditionsHeadlessTestCase10Ebay.xml</SuiteXmlFiles>
     </properties>
 
     <dependencies>

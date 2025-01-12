@@ -56,7 +56,7 @@ public class JobsPortalPageTestCaseEbay extends MainPageTestCaseEbay {
         String screenshotPath4 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Careers Page Test Case 6 Ebay");
         test.pass("System Successfully Navigate to Careers Page").addScreenCaptureFromPath(screenshotPath4);
 
-        // Create an explicit wait with a timeout of 30 seconds
+        // Create an explicit wait with a timeout of 45 seconds
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(45));
         try {
             // Wait for the element to be visible

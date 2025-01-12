@@ -13,7 +13,6 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <suiteXmlFiles>MainTestCasesPagesEbay.xml</suiteXmlFiles>
         <SuiteXmlFiles>AddToCartTestCase1Ebay.xml</SuiteXmlFiles>
         <SuiteXmlFiles>AddToWatchListTestCase2Ebay.xml</SuiteXmlFiles>
         <SuiteXmlFiles>BuyItNowTestCase3Ebay.xml</SuiteXmlFiles>

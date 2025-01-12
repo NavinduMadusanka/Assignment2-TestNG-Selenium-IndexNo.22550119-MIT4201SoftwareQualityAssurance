@@ -46,7 +46,7 @@
             <class name="MainTestCasesPagesEbay.ShippingHeadlessTestCase9Ebay" />
         </classes>
     </test>
-    <test name="Test9">
+    <test name="Test10">
         <classes>
             <class name="MainTestCasesPagesEbay.ReturnsConditionsHeadlessTestCase10Ebay" />
         </classes>

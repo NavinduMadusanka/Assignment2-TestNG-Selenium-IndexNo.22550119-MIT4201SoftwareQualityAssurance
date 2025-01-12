@@ -162,7 +162,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId> <!-- For TestNG -->
-            <version>2.21.0</version> <!-- Use the latest version -->
+            <version>2.21.0</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>

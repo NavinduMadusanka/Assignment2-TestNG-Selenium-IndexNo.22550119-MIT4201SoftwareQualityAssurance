@@ -48,7 +48,7 @@ public class QuantityCheckHeadlessTestCase8Ebay extends HeadlessTestCaseEbay {
         if (conditionsMet) {
             test = extent.createTest("Product Quantity Check Verified", "Product Quantity Check is met.");
             String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Quantity Check Verified Test Case 8 Ebay");
-            test.pass("Product Status is met").addScreenCaptureFromPath(screenshotPath3);
+            test.pass("Product Quantity Check is met").addScreenCaptureFromPath(screenshotPath3);
         } else {
             test = extent.createTest("Product Quantity Check Verification Failed", "Product Quantity Check is not met.");
             String screenshotPath3 = ScreenShotsCaptureUtilsTestCaseEbay.takeScreenshot(driver, "Product Quantity Check Not Met Test Case 8 Ebay");
